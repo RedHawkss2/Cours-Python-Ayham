@@ -1,0 +1,20 @@
+# Exercice pour la semaine prochaine : Ajouter la gestion des stocks
+boutique = {'épée' : 5, "bouclier" : 3, "arc" : 6}
+stock = {"épée" : 10, "bouclier" : 14, "arc" : 20}
+bourse_du_joueur = 15
+
+achat = input("Que voulez-vous acheter ? (épée, bouclier, arc)\n")
+
+if achat in boutique :
+    print(f"Votre item est en stock ! Cela vous coutera {boutique[achat]} pièces !")
+    if bourse_du_joueur >= boutique[achat] :
+        bourse_du_joueur -= boutique[achat]
+        print("Merci pour votre achat !")
+        print(f"Il vous reste {bourse_du_joueur} pièces !")
+    else :
+        print("Vous n'avez pas assez de pièces !")
+
+else :
+    print("Rupture de stock !")
+
+
