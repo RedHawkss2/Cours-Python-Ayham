@@ -1,1 +1,33 @@
+liste = [1, 2, 34, "Bonjour", "Aurevoir"]
+# Liste != Dictionnaire
+#Propriété : muable, indexer, itérable
+etudiants = {"nom" : "Ayham",
+             "age" : "18",
+             "filière" : "informatique"} #clé : valeur
+
+print(etudiants)
+etudiants["age"] = "19" #modification
+etudiants["moyenne"] =  17
+
+print(etudiants)
+
+for key, value in etudiants.items() :
+    print(f"{key} : {value}")
+
+del etudiants["filière"] #suppression
+
+
+for key, value in etudiants.items() :
+    print(f"{key} : {value}")
+
+achat = input("Que voulez-vous acheter ? : ")
+
+
+if "moyenne" in etudiants :
+    print("La clé age est déjà présente dans le dictionnaire")
+else :
+    print("la clé n'existe pas")
+
+
+
 
