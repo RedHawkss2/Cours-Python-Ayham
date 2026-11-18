@@ -5,3 +5,4 @@ Résumés, exemples et exercices de Python pour réviser les cours.
 ## Sommaire
 
 - [Les dictionnaires Python](lecons/dictionnaires.md) — clés, valeurs et exercices à faire dans PyCharm.
+- [Les fonctions Python](lecons/fonctions.md) — paramètres, arguments, `print()` et `return`.
